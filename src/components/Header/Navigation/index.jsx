@@ -27,10 +27,10 @@ const Navigation = () => {
             </Button>
           </div>
           <div className="col-2 w-[60%]">
-            <ul className="flex items-center gap-4">
+            <ul className="flex items-center gap-4 nav">
               <li className="list-none">
                 <Link
-                  to="/home"
+                  to="/"
                   className="link transition text-[16px] font-[500]"
                 >
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
@@ -38,19 +38,99 @@ const Navigation = () => {
                   </Button>
                 </Link>
               </li>
-              <li className="list-none">
+              <li className="list-none relative">
                 <Link
-                  to="/fashion"
+                  to="/"
                   className="link transition text-[16px] font-[500]"
                 >
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
                     Fashion
                   </Button>
                 </Link>
+
+                <div className="submenu absolute top-[120%] left-[0%] min-w-[200px] bg-white shadow-md opacity-0 transition-all">
+                  <ul>
+                    <li className="list-none w-full relative">
+                      <Link to="/" className="w-full">
+                        <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                          Men
+                        </Button>
+
+                        <div className="submenu absolute top-[0%] left-[100%] min-w-[200px] bg-white shadow-md opacity-0 transition-all">
+                          <ul>
+                            <li className="list-none w-full">
+                              <Link to="/" className="w-full">
+                                <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                                  T-shirts
+                                </Button>
+                              </Link>
+                            </li>
+                            <li className="list-none w-full">
+                              <Link to="/" className="w-full">
+                                <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                                  Jeans
+                                </Button>
+                              </Link>
+                            </li>
+                            <li className="list-none w-full">
+                              <Link to="/" className="w-full">
+                                <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                                  Footwear
+                                </Button>
+                              </Link>
+                            </li>
+                            <li className="list-none w-full">
+                              <Link to="/" className="w-full">
+                                <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                                  Watch
+                                </Button>
+                              </Link>
+                            </li>
+                            <li className="list-none w-full">
+                              <Link to="/" className="w-full">
+                                <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                                  Pants
+                                </Button>
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+                      </Link>
+                    </li>
+                    <li className="list-none w-full">
+                      <Link to="/" className="w-full">
+                        <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                          Women
+                        </Button>
+                      </Link>
+                    </li>
+                    <li className="list-none w-full">
+                      <Link to="/" className="w-full">
+                        <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                          Kids
+                        </Button>
+                      </Link>
+                    </li>
+                    <li className="list-none w-full">
+                      <Link to="/" className="w-full">
+                        <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                          Boys
+                        </Button>
+                      </Link>
+                    </li>
+                    <li className="list-none w-full">
+                      <Link to="/" className="w-full">
+                        <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                          Girls
+                        </Button>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li className="list-none">
                 <Link
-                  to="/electronics"
+                  to="/"
                   className="link transition text-[16px] font-[500]"
                 >
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
@@ -60,7 +140,7 @@ const Navigation = () => {
               </li>
               <li className="list-none">
                 <Link
-                  to="/bags"
+                  to="/"
                   className="link transition text-[16px] font-[500]"
                 >
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
@@ -70,7 +150,7 @@ const Navigation = () => {
               </li>
               <li className="list-none">
                 <Link
-                  to="/footwear"
+                  to="/"
                   className="link transition text-[16px] font-[500]"
                 >
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
@@ -80,7 +160,7 @@ const Navigation = () => {
               </li>
               <li className="list-none">
                 <Link
-                  to="/groceries"
+                  to="/"
                   className="link transition text-[16px] font-[500]"
                 >
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
@@ -90,7 +170,7 @@ const Navigation = () => {
               </li>
               <li className="list-none">
                 <Link
-                  to="/beauty"
+                  to="/"
                   className="link transition text-[16px] font-[500]"
                 >
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
@@ -100,7 +180,7 @@ const Navigation = () => {
               </li>
               <li className="list-none">
                 <Link
-                  to="/wellness"
+                  to="/"
                   className="link transition text-[16px] font-[500]"
                 >
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
@@ -110,7 +190,7 @@ const Navigation = () => {
               </li>
               <li className="list-none">
                 <Link
-                  to="/jewellery"
+                  to="/"
                   className="link transition text-[16px] font-[500]"
                 >
                   <Button className="link transition !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">

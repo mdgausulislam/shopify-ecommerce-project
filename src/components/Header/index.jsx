@@ -35,7 +35,7 @@ const Header = () => {
               <ul className="flex items-center gap-3">
                 <li className="list-none">
                   <Link
-                    to="track-order"
+                    to="/"
                     className="text-[13px] link text-[500] transition"
                   >
                     Track Order
@@ -43,7 +43,7 @@ const Header = () => {
                 </li>
                 <li className="list-none">
                   <Link
-                    to="help-center"
+                    to="/"
                     className="text-[13px] link text-[500] transition"
                   >
                     Help Center
@@ -58,9 +58,9 @@ const Header = () => {
       <div className="header py-4 border-t-[1px] border-gray-250 border-b-[1px]">
         <div className="container flex items-center justify-between">
           <div className="col1 w-[25%]">
-            <Link to={"/home"}>
+            <Link to="/">
               <img src={Logo} className="w-[70%]" />
-            </Link>{" "}
+            </Link>
           </div>
           <div className="col2 w-[45%]">
             <Search />
@@ -68,17 +68,11 @@ const Header = () => {
           <div className="col3 w-[30%] flex items-center">
             <ul className="flex items-center justify-end gap-3 w-full">
               <li className="list-none">
-                <Link
-                  to="/login"
-                  className="text-[15px] link font-[500] transition"
-                >
+                <Link to="/" className="text-[15px] link font-[500] transition">
                   Login
                 </Link>{" "}
                 | &nbsp;
-                <Link
-                  to="/register"
-                  className="text-[15px] link font-[500] transition"
-                >
+                <Link to="/" className="text-[15px] link font-[500] transition">
                   Register
                 </Link>
               </li>

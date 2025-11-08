@@ -13,6 +13,7 @@ body {
   font-optical-sizing: auto;
   background-color: #f5f0f0;
   color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
 }
 
 .container {
@@ -33,4 +34,35 @@ nav ul button {
 
 nav ul button:hover {
   background: none !important;
+}
+.sliderHome {
+  overflow: inherit !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+}
+/* target pseudo-element (font-icon implementation) */
+.sliderHome .swiper-button-prev:after,
+.sliderHome .swiper-button-next:after {
+  font-size: 22px !important;
+  color: #000 !important;
+  display: inline-block !important;
+}
+
+/* fallback — target svg arrows (some Swiper builds use SVG) */
+.sliderHome .swiper-button-prev svg,
+.sliderHome .swiper-button-next svg {
+  width: 22px !important;
+  height: 22px !important;
+  fill: #000 !important;
+  stroke: #000 !important;
 }
