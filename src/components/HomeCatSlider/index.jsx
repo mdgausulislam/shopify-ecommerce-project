@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 const HomeCatSlider = () => {
   return (
-    <div className="homeCatSlider">
+    <div className="homeCatSlider bg-[#f5f0f0] py-8 pt-4">
       <div className="container">
         <Swiper
           slidesPerView={7}

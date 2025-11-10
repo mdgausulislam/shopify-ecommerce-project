@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 import Logo from "../../assets/Banner/img1.webp";
 import Logo1 from "../../assets/Banner/img5.webp";
@@ -12,12 +12,16 @@ import Logo2 from "../../assets/Banner/img2.webp";
 
 const HomeSlider = () => {
   return (
-    <div className="homeSlider py-4">
+    <div className="homeSlider py-4 bg-[#f5f0f0]">
       <div className="container">
         <Swiper
           spaceBetween={10}
           navigation={true}
-          modules={[Navigation]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Navigation, Autoplay]}
           className="sliderHome"
         >
           <SwiperSlide>
