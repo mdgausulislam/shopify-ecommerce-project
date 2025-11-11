@@ -11,7 +11,7 @@ const Home = () => {
       <HomeCatSlider />
       <section className="py-4 bg-white">
         <div className="container">
-          <div className="freeShipping w-full py-4 p-4 border-2 border-[red] flex justify-between items-center">
+          <div className="freeShipping w-full py-4 p-4 border-2 border-[red] flex justify-between items-center rounded-md mb-5">
             <div className="col1 flex items-center gap-4">
               <FaShippingFast className="text-[50px]" />
               <span className="text-[20px] font-[600] uppercase">

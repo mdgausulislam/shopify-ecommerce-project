@@ -6,11 +6,8 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 
-import AdsBanner1 from "../../assets/AdsBanner/banner-1.jpg";
-import AdsBanner2 from "../../assets/AdsBanner/banner-3.webp";
-import AdsBanner3 from "../../assets/AdsBanner/banner-4.webp";
-import AdsBanner4 from "../../assets/Banner/img2.webp";
-
+import AdsBanner1 from "../../assets/Banner/img2_mobile.webp";
+import BannerBox from "../BannerBox";
 
 const AdsBannerSlider = (props) => {
   return (
@@ -23,34 +20,22 @@ const AdsBannerSlider = (props) => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="box">
-            <p>frdf</p>
-            <img src={AdsBanner1} alt="adsbanner" className="w-full" />
-          </div>
+          <BannerBox img={AdsBanner1} link={"/"} />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="box">
-            <p>frdf</p>
-            <img src={AdsBanner4} alt="adsbanner" className="w-full" />
-          </div>
+          <BannerBox img={AdsBanner1} />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="box">
-            <p>frdf</p>
-            <img src={AdsBanner3} alt="adsbanner" className="w-full" />
-          </div>
+          <BannerBox img={AdsBanner1} />
         </SwiperSlide>
-         <SwiperSlide>
-          <div className="box">
-            <p>frdf</p>
-            <img src={AdsBanner3} alt="adsbanner" className="w-full" />
-          </div>
+        <SwiperSlide>
+          <BannerBox img={AdsBanner1} />
         </SwiperSlide>
-         <SwiperSlide>
-          <div className="box">
-            <p>frdf</p>
-            <img src={AdsBanner3} alt="adsbanner" className="w-full" />
-          </div>
+        <SwiperSlide>
+          <BannerBox img={AdsBanner1} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <BannerBox img={AdsBanner1} />
         </SwiperSlide>
       </Swiper>
     </div>
