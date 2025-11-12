@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 
 const BannerBox = (props) => {
   return (
-    <div className="box bannerBox overflow-hidden rounded-lg">
+    <div className="box bannerBox overflow-hidden rounded-lg group">
       <Link to="/">
-        <img src={props.img} alt="adsbanner" className="w-full" />
+        <img
+          src={props.img}
+          alt="adsbanner"
+          className="w-full transition-all group-hover:scale-105 rotate-1"
+        />
       </Link>
     </div>
   );

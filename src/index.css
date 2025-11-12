@@ -99,3 +99,25 @@ nav ul button:hover {
 .homeCatSlider .item:hover img {
   transform: scale(1.1);
 }
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  top: 55% !important;
+}
+
+.smlBtn .swiper-button-prev svg,
+.smlBtn .swiper-button-next svg {
+  width: 16px !important;
+  height: 16px !important;
+  fill: #000 !important;
+  stroke: #000 !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #ff5252 !important;
+}
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #ff5252 !important;
+}
