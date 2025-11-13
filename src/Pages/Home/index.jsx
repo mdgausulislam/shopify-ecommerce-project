@@ -6,6 +6,7 @@ import AdsBannerSlider from "../../components/AdsBannerSlider";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import ProductsSlider from "../../components/ProductsSlider";
 
 const Home = () => {
   const [value, setValue] = React.useState(0);
@@ -44,10 +45,11 @@ const Home = () => {
                 <Tab label="Beauty" />
                 <Tab label="Wellness" />
                 <Tab label="Jewellery" />
-                <Tab label="Jewellery" />
               </Tabs>
             </div>
           </div>
+
+          <ProductsSlider items={5} />
         </div>
       </section>
 
