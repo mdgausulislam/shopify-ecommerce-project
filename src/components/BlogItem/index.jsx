@@ -1,6 +1,8 @@
 import React from "react";
 import Blog1 from "../../assets/blogs/blog-01.jpg";
 import { IoTimeOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { IoIosArrowForward } from "react-icons/io";
 
 const BlogItem = () => {
   return (
@@ -18,7 +20,22 @@ const BlogItem = () => {
         </span>
       </div>
 
-      <div className="info"></div>
+      <div className="info py-4">
+        <h2 className="text-[16px] font-[600] text-black">
+          <Link to="/" className="link">Nullam Table</Link>
+        </h2>
+        <p className="text-[14px] font-[400] text-[rgba(0,0,0,0.8)] mb-4 mt-2">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+          perspiciatis nobis molestias ratione esse....
+        </p>
+
+        <Link
+          to="/"
+          className="link font-[500] text-[14px] flex items-center gap-1"
+        >
+          Read More <IoIosArrowForward />
+        </Link>
+      </div>
     </div>
   );
 };
