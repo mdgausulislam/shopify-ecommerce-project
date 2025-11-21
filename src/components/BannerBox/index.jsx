@@ -8,7 +8,7 @@ const BannerBox = (props) => {
         <img
           src={props.img}
           alt="adsbanner"
-          className="w-full transition-all group-hover:scale-105 rotate-1"
+          className="w-full transition-all group-hover:scale-105 group-hover:rotate-1"
         />
       </Link>
     </div>
